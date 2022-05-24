@@ -11,7 +11,7 @@ import SwiftUI
 struct UbernetApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FormView()
         }
     }
 }
