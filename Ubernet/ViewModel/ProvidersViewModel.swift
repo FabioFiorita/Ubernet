@@ -10,6 +10,7 @@ import Foundation
 class ProvidersViewModel: ObservableObject {
     @Published var plans: [Plan] = []
     @Published var installers: [Installer] = []
+    
     func fetchPlans() {
         guard let url = URL(string: "https://app-challenge-api.herokuapp.com/plans") else {return}
         url.getResult { (result: Result<[Plan], Error>) in
@@ -24,6 +25,8 @@ class ProvidersViewModel: ObservableObject {
             }
         }
     }
+    
+    
     func fetchPlan(state: String) {
         let str = "?state=\(state)"
         guard let url = URL(string: "https://app-challenge-api.herokuapp.com/plans\(str)") else {return}
@@ -39,9 +42,42 @@ class ProvidersViewModel: ObservableObject {
             }
         }
     }
+    
+    func fetchPlan(installerID: Int) {
+        let str = "?installer=\(installerID)"
+        guard let url = URL(string: "https://app-challenge-api.herokuapp.com/plans\(str)") else {return}
+        url.getResult { (result: Result<[Plan], Error>) in
+            switch result {
+            case let .success(plans):
+                DispatchQueue.main.async {
+                    self.plans = plans
+                }
+                print(plans)
+            case let .failure(error):
+                print(error)
+            }
+        }
+    }
+    
     func fetchInstallers() {
         guard let url = URL(string: "https://app-challenge-api.herokuapp.com/installers") else {return}
 
+        url.getResult { (result: Result<[Installer], Error>) in
+            switch result {
+            case let .success(installers):
+                DispatchQueue.main.async {
+                    self.installers = installers
+                }
+                print(installers)
+            case let .failure(error):
+                print(error)
+            }
+        }
+    }
+    
+    func fetchInstaller(planID: Int) {
+        let str = "?plan=\(planID)"
+        guard let url = URL(string: "https://app-challenge-api.herokuapp.com/installers\(str)") else {return}
         url.getResult { (result: Result<[Installer], Error>) in
             switch result {
             case let .success(installers):
