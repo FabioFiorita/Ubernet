@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C1653BEC283FBFA8008E299B /* InstallerTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1653BEB283FBFA8008E299B /* InstallerTabBarView.swift */; };
+		C1653BEE283FC5AA008E299B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1653BED283FC5AA008E299B /* GoogleService-Info.plist */; };
 		C17DD30B283D211D00004B20 /* UbernetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17DD30A283D211D00004B20 /* UbernetApp.swift */; };
 		C17DD30F283D212400004B20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17DD30E283D212400004B20 /* Assets.xcassets */; };
 		C17DD312283D212400004B20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17DD311283D212400004B20 /* Preview Assets.xcassets */; };
@@ -28,11 +29,11 @@
 		C1898777283EC07E00FD551D /* InstallationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898776283EC07E00FD551D /* InstallationsView.swift */; };
 		C1898779283ECBC300FD551D /* InstallationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898778283ECBC300FD551D /* InstallationDetailView.swift */; };
 		C189877B283ED5B400FD551D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C189877A283ED5B400FD551D /* Launch Screen.storyboard */; };
-		C189877D283FA02900FD551D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C189877C283FA02900FD551D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C1653BEB283FBFA8008E299B /* InstallerTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallerTabBarView.swift; sourceTree = "<group>"; };
+		C1653BED283FC5AA008E299B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C17DD307283D211D00004B20 /* Ubernet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ubernet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17DD30A283D211D00004B20 /* UbernetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbernetApp.swift; sourceTree = "<group>"; };
 		C17DD30E283D212400004B20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 		C1898776283EC07E00FD551D /* InstallationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallationsView.swift; sourceTree = "<group>"; };
 		C1898778283ECBC300FD551D /* InstallationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallationDetailView.swift; sourceTree = "<group>"; };
 		C189877A283ED5B400FD551D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		C189877C283FA02900FD551D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +93,8 @@
 				C17DD31D283D518000004B20 /* Model */,
 				C17DD318283D217900004B20 /* View */,
 				C189875D283D6F8300FD551D /* Firebase */,
+				C1653BED283FC5AA008E299B /* GoogleService-Info.plist */,
 				C17DD30E283D212400004B20 /* Assets.xcassets */,
-				C189877C283FA02900FD551D /* GoogleService-Info.plist */,
 				C17DD310283D212400004B20 /* Preview Content */,
 			);
 			path = Ubernet;
@@ -218,7 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17DD312283D212400004B20 /* Preview Assets.xcassets in Resources */,
-				C189877D283FA02900FD551D /* GoogleService-Info.plist in Resources */,
+				C1653BEE283FC5AA008E299B /* GoogleService-Info.plist in Resources */,
 				C17DD30F283D212400004B20 /* Assets.xcassets in Resources */,
 				C189877B283ED5B400FD551D /* Launch Screen.storyboard in Resources */,
 			);
