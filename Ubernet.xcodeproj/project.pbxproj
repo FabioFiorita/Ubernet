@@ -27,6 +27,7 @@
 		C1898775283EBA5800FD551D /* BookingInstallationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898774283EBA5800FD551D /* BookingInstallationView.swift */; };
 		C1898777283EC07E00FD551D /* InstallationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898776283EC07E00FD551D /* InstallationsView.swift */; };
 		C1898779283ECBC300FD551D /* InstallationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898778283ECBC300FD551D /* InstallationDetailView.swift */; };
+		C189877B283ED5B400FD551D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C189877A283ED5B400FD551D /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		C1898774283EBA5800FD551D /* BookingInstallationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingInstallationView.swift; sourceTree = "<group>"; };
 		C1898776283EC07E00FD551D /* InstallationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallationsView.swift; sourceTree = "<group>"; };
 		C1898778283ECBC300FD551D /* InstallationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallationDetailView.swift; sourceTree = "<group>"; };
+		C189877A283ED5B400FD551D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				C17DD30A283D211D00004B20 /* UbernetApp.swift */,
+				C189877A283ED5B400FD551D /* Launch Screen.storyboard */,
 				C17DD31E283D518800004B20 /* ViewModel */,
 				C17DD31D283D518000004B20 /* Model */,
 				C17DD318283D217900004B20 /* View */,
@@ -213,6 +216,7 @@
 			files = (
 				C17DD312283D212400004B20 /* Preview Assets.xcassets in Resources */,
 				C17DD30F283D212400004B20 /* Assets.xcassets in Resources */,
+				C189877B283ED5B400FD551D /* Launch Screen.storyboard in Resources */,
 				C189875C283D6F7000FD551D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

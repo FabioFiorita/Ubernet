@@ -19,7 +19,11 @@ struct OnboardingView: View {
                 VStack {
                     Text("Ubernet")
                         .font(.largeTitle)
-                    Text("Encontre provedores de Internet perto de você")
+                    Text("Encontre provedores de Internet perto de você").fontWeight(.light)
+                    Image("logo")
+                        .resizable()
+                        .frame(width: 350, height: 350)
+                        .scaledToFit()
                     Spacer()
                     Button {
                         showSignUpModal = true
