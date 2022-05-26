@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1653BEC283FBFA8008E299B /* InstallerTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1653BEB283FBFA8008E299B /* InstallerTabBarView.swift */; };
 		C17DD30B283D211D00004B20 /* UbernetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17DD30A283D211D00004B20 /* UbernetApp.swift */; };
 		C17DD30F283D212400004B20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17DD30E283D212400004B20 /* Assets.xcassets */; };
 		C17DD312283D212400004B20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C17DD311283D212400004B20 /* Preview Assets.xcassets */; };
@@ -17,20 +18,21 @@
 		C1898755283D676700FD551D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898754283D676700FD551D /* LoginView.swift */; };
 		C1898757283D677000FD551D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898756283D677000FD551D /* RegisterView.swift */; };
 		C189875A283D6EBC00FD551D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C1898759283D6EBC00FD551D /* FirebaseAuth */; };
-		C189875C283D6F7000FD551D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C189875B283D6F7000FD551D /* GoogleService-Info.plist */; };
 		C189875F283D6F9100FD551D /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C189875E283D6F9100FD551D /* FirebaseManager.swift */; };
 		C1898762283D773B00FD551D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C1898761283D773B00FD551D /* FirebaseFirestore */; };
 		C1898764283D773B00FD551D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C1898763283D773B00FD551D /* FirebaseStorage */; };
-		C1898768283E84AD00FD551D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898767283E84AD00FD551D /* TabBarView.swift */; };
+		C1898768283E84AD00FD551D /* UserTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898767283E84AD00FD551D /* UserTabBarView.swift */; };
 		C189876C283E853B00FD551D /* InstallersMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C189876B283E853B00FD551D /* InstallersMapView.swift */; };
 		C189876E283E871500FD551D /* PlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C189876D283E871500FD551D /* PlanDetailView.swift */; };
 		C1898775283EBA5800FD551D /* BookingInstallationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898774283EBA5800FD551D /* BookingInstallationView.swift */; };
 		C1898777283EC07E00FD551D /* InstallationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898776283EC07E00FD551D /* InstallationsView.swift */; };
 		C1898779283ECBC300FD551D /* InstallationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1898778283ECBC300FD551D /* InstallationDetailView.swift */; };
 		C189877B283ED5B400FD551D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C189877A283ED5B400FD551D /* Launch Screen.storyboard */; };
+		C189877D283FA02900FD551D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C189877C283FA02900FD551D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C1653BEB283FBFA8008E299B /* InstallerTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallerTabBarView.swift; sourceTree = "<group>"; };
 		C17DD307283D211D00004B20 /* Ubernet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ubernet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17DD30A283D211D00004B20 /* UbernetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbernetApp.swift; sourceTree = "<group>"; };
 		C17DD30E283D212400004B20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,15 +43,15 @@
 		C1898752283D661E00FD551D /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		C1898754283D676700FD551D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C1898756283D677000FD551D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
-		C189875B283D6F7000FD551D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C189875E283D6F9100FD551D /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
-		C1898767283E84AD00FD551D /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		C1898767283E84AD00FD551D /* UserTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTabBarView.swift; sourceTree = "<group>"; };
 		C189876B283E853B00FD551D /* InstallersMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallersMapView.swift; sourceTree = "<group>"; };
 		C189876D283E871500FD551D /* PlanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailView.swift; sourceTree = "<group>"; };
 		C1898774283EBA5800FD551D /* BookingInstallationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingInstallationView.swift; sourceTree = "<group>"; };
 		C1898776283EC07E00FD551D /* InstallationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallationsView.swift; sourceTree = "<group>"; };
 		C1898778283ECBC300FD551D /* InstallationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallationDetailView.swift; sourceTree = "<group>"; };
 		C189877A283ED5B400FD551D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C189877C283FA02900FD551D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +94,7 @@
 				C17DD318283D217900004B20 /* View */,
 				C189875D283D6F8300FD551D /* Firebase */,
 				C17DD30E283D212400004B20 /* Assets.xcassets */,
-				C189875B283D6F7000FD551D /* GoogleService-Info.plist */,
+				C189877C283FA02900FD551D /* GoogleService-Info.plist */,
 				C17DD310283D212400004B20 /* Preview Content */,
 			);
 			path = Ubernet;
@@ -115,10 +117,11 @@
 				C1898752283D661E00FD551D /* OnboardingView.swift */,
 				C1898754283D676700FD551D /* LoginView.swift */,
 				C1898756283D677000FD551D /* RegisterView.swift */,
-				C1898767283E84AD00FD551D /* TabBarView.swift */,
+				C1898767283E84AD00FD551D /* UserTabBarView.swift */,
 				C189876B283E853B00FD551D /* InstallersMapView.swift */,
 				C1898776283EC07E00FD551D /* InstallationsView.swift */,
 				C1898778283ECBC300FD551D /* InstallationDetailView.swift */,
+				C1653BEB283FBFA8008E299B /* InstallerTabBarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,9 +218,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C17DD312283D212400004B20 /* Preview Assets.xcassets in Resources */,
+				C189877D283FA02900FD551D /* GoogleService-Info.plist in Resources */,
 				C17DD30F283D212400004B20 /* Assets.xcassets in Resources */,
 				C189877B283ED5B400FD551D /* Launch Screen.storyboard in Resources */,
-				C189875C283D6F7000FD551D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,8 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C189875F283D6F9100FD551D /* FirebaseManager.swift in Sources */,
+				C1653BEC283FBFA8008E299B /* InstallerTabBarView.swift in Sources */,
 				C189876C283E853B00FD551D /* InstallersMapView.swift in Sources */,
-				C1898768283E84AD00FD551D /* TabBarView.swift in Sources */,
+				C1898768283E84AD00FD551D /* UserTabBarView.swift in Sources */,
 				C1898777283EC07E00FD551D /* InstallationsView.swift in Sources */,
 				C189876E283E871500FD551D /* PlanDetailView.swift in Sources */,
 				C1898755283D676700FD551D /* LoginView.swift in Sources */,
@@ -376,6 +380,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -405,6 +410,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

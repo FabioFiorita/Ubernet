@@ -7,15 +7,11 @@
 
 import SwiftUI
 
-struct TabBarView: View {
-    @StateObject var vm = ProvidersViewModel()
+struct UserTabBarView: View {
+    @ObservedObject var vm: ProvidersViewModel
     @EnvironmentObject var fbManager: FirebaseManager
     var body: some View {
         TabView {
-            InstallationsView(vm: vm)
-                .tabItem {
-                    Label("Agendamentos", systemImage: "calendar")
-                }
             PlansView(vm: vm)
                 .tabItem {
                     Label("Planos", systemImage: "doc.text.fill")
@@ -32,8 +28,8 @@ struct TabBarView: View {
     }
 }
 
-struct TabBarView_Previews: PreviewProvider {
+struct UserTabBar_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarView()
+        UserTabBarView(vm: ProvidersViewModel())
     }
 }

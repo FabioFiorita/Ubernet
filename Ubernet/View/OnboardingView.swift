@@ -11,10 +11,14 @@ struct OnboardingView: View {
     @EnvironmentObject var fbManager: FirebaseManager
     @State private var showSignUpModal = false
     @State private var showSignInModal = false
+    @StateObject var vm = ProvidersViewModel()
+    @State private var user = User(name: "", city: "", email: "", phone: "", state: "", installer: false)
+    
     var body: some View {
         Group {
             if fbManager.signedIn {
-                TabBarView()
+                InstallerTabBarView(vm: vm)
+                //UserTabBarView(vm: vm)
             } else {
                 VStack {
                     Text("Ubernet")
@@ -46,8 +50,8 @@ struct OnboardingView: View {
                 }
             }
         }
-        
         .onAppear {
+            user = fbManager.user ?? User(name: "", city: "", email: "", phone: "", state: "", installer: false)
             fbManager.signedIn = fbManager.isSignedIn
         }
     }

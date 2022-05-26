@@ -83,6 +83,6 @@ let dateFormatter: DateFormatter = {
          let formatter = DateFormatter()
          formatter.dateStyle = .full
          formatter.timeStyle = .short
-         formatter.locale = Locale(identifier: "pt-BR")
+         //formatter.locale = Locale(identifier: "pt-BR")
          return formatter
      }()
