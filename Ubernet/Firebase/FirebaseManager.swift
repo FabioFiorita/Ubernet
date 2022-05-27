@@ -126,7 +126,7 @@ class FirebaseManager: ObservableObject {
                 let city = data["city"] as? String ?? ""
                 let state = data["state"] as? String ?? ""
                 let phone = data["phone"] as? String ?? ""
-                let date = data["date"] as? Date ?? Date()
+                let date = (data["date"] as? Timestamp)?.dateValue() ?? Date()
                 let planID = data["planID"] as? Int ?? 1
                 let booking = Booking(name: name, city: city, email: email, phone: phone, state: state, date: date, planID: planID)
                 bookings.append(booking)
@@ -134,4 +134,14 @@ class FirebaseManager: ObservableObject {
             self.bookings = bookings
         })
     }
+    
+    func convertTimestamp(serverTimestamp: Double) -> String {
+            let x = serverTimestamp / 1000
+            let date = NSDate(timeIntervalSince1970: x)
+            let formatter = DateFormatter()
+            formatter.dateStyle = .long
+            formatter.timeStyle = .medium
+
+            return formatter.string(from: date as Date)
+        }
 }

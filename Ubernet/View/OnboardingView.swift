@@ -17,30 +17,41 @@ struct OnboardingView: View {
     var body: some View {
         Group {
             if fbManager.signedIn {
-                InstallerTabBarView(vm: vm)
-                //UserTabBarView(vm: vm)
+                if user.installer {
+                    InstallerTabBarView(vm: vm)
+                } else {
+                    UserTabBarView(vm: vm)
+                }
             } else {
                 VStack {
+                    Spacer()
                     Text("Ubernet")
                         .font(.largeTitle)
+                        .fontWeight(.light)
                     Text("Encontre provedores de Internet perto de você").fontWeight(.light)
+                    Spacer()
                     Image("logo")
                         .resizable()
-                        .frame(width: 350, height: 350)
+                        .frame(width: 320, height: 320)
                         .scaledToFit()
                     Spacer()
-                    Button {
-                        showSignUpModal = true
-                    } label: {
-                        Text("ABRIR MINHA CONTA")
+                    HStack {
+                        Button {
+                            showSignInModal = true
+                        } label: {
+                            Text("JÁ TENHO CONTA")
+                        }
+                        .buttonStyle(.bordered)
+                        .frame(width: 140)
+                        Button {
+                            showSignUpModal = true
+                        } label: {
+                            Text("ABRIR MINHA CONTA")
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .frame(width: 140)
                     }
-                    .buttonStyle(.borderedProminent)
-                    Button {
-                        showSignInModal = true
-                    } label: {
-                        Text("JÁ TENHO CONTA")
-                    }
-                    .buttonStyle(.bordered)
+                    
                 }
                 .sheet(isPresented: $showSignUpModal) {
                     RegisterView()

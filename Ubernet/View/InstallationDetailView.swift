@@ -16,15 +16,15 @@ struct InstallationDetailView: View {
             GroupBox {
                 HStack {
                     VStack(alignment: .leading, spacing: 8.0) {
-                        Text("Data: \(booking.date, formatter: dateFormatter)")
+                        Text("**Data:** \(booking.date, formatter: dateFormatter)")
                             .fontWeight(.light)
-                        Text("Telefone: \(booking.phone)")
+                        Text("**Telefone:** \(booking.phone)")
                             .fontWeight(.light)
-                        Text("Email: \(booking.email)")
+                        Text("**Email:** \(booking.email)")
                             .fontWeight(.light)
-                        Text("Cidade: \(booking.city)")
+                        Text("**Cidade:** \(booking.city)")
                             .fontWeight(.light)
-                        Text("Estado: \(booking.state)")
+                        Text("**Estado:** \(booking.state)")
                             .fontWeight(.light)
                     }
                     Spacer()
