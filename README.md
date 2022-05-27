@@ -17,23 +17,14 @@
  - [SwiftUI](https://developer.apple.com/xcode/swiftui/)
  - [Firebase](https://firebase.google.com/?hl=pt)
 
-## ⚙️ Dependências (instale antes de tentar executar o projeto)
- - [Yarn](https://yarnpkg.com/)
+## ⚙️ Instruções para instalação e execução
+  1. Instale o [Xcode](https://developer.apple.com/xcode/download/);
+  1. Clone esse repositório;
+  1. Abra "Ubernet.xcworkspace" no Xcode;
+  1. Vá no Xcode em Preferences > Accounts e adicione seu Apple ID;
+  1. Na barra de opções do Xcode selecione "Ubernet" e vá para General > Identity. Adicione uma palavra no final do *Bundle Identifier* e.g. com.FabioFiorita.Ubernet*.name* para que se torne único. Selecione seu Apple ID em Signing > Team;
+  1. Conecte seu iPad ou iPhone usando um cabo USB e o selecione em Xcode's Product menu > Destination;
+  1. Aperte CMD+R ou Product > Run para instalar;
+  1. Se você instalar usando uma conta grátis (não-desenvolvedor), certifique-se de executar o programa a cada 7 dias, ou ele fechará assim que abrir qunado sua certificação expirar.
  
-## 🚀️ Executando o projeto
 
-1. Clone o repositório: 
-
-```bash
-git clone https://github.com/S204-Inatel-2022-1/myBills-402.git && cd myBills-402
-```
-2. Instale todas as depencências
-
-```bash
-yarn
-```
-3. Rode o aplicativo
-```bash
-yarn dev
-```
-4. Abra [localhost:3000](http://localhost:3000) para ver o app funcionando
