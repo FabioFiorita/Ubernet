@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="Ubernet/Assets.xcassets/logo.imageset/ubernet.png"/> 
+  <img src="Ubernet/Assets.xcassets/logo.imageset/ubernet.png"/width="350"> 
 </h1>
 
 ## ⚡️ O Projeto
