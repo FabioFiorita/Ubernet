@@ -17,7 +17,7 @@
  - [SwiftUI](https://developer.apple.com/xcode/swiftui/)
  - [Firebase](https://firebase.google.com/?hl=pt)
 
-## ⚙️ Instruções para instalação e execução
+## ⚙️ Instruções para instalação
   1. Instale o [Xcode](https://developer.apple.com/xcode/download/);
   1. Clone esse repositório;
   1. Abra "Ubernet.xcworkspace" no Xcode;
